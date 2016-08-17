@@ -33,6 +33,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 25228189184 # 26838801408 - 16384
 TARGET_KERNEL_CONFIG := lineageos_panda01a_defconfig
 
 # Properties
+TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(DEVICE_PATH)/android_filesystem_config.h
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Sepolicy

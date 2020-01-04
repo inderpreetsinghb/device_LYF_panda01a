@@ -437,27 +437,36 @@ vendor/lib/libmmcamera_s5k5e8_z5e8yab.so
 vendor/lib/libmmcamera_s5k5e8_z5e8yab_eeprom.so
 vendor/lib/libmmcamera_sunny_omi5f06_eeprom.so
 
-# Consumerir
-bin/consumerird
-
 # Display calibration data
 etc/pp_calib_data_sharp_r63315_1080p_video_mode_dsi_panel.xml|08d8a40dc05ab00eb0709319b99e507124aacfdd
 
-# Fingerprint sensor
-bin/gx_fpd
-lib64/hw/fingerprint.goodix.default.so:lib64/hw/fingerprint.gdx.so
-lib64/hw/fingerprint.msm8952.so:lib64/hw/fingerprint.fpc.so
-lib64/hw/gxfingerprint.default.so
-lib64/lib_fpc_tac_shared.so
-lib64/libfp_client.so
-lib64/libfpnav.so
-lib64/libfpservice.so
-lib/hw/fingerprint.msm8952.so:lib/hw/fingerprint.fpc.so
-lib/lib_fpc_tac_shared.so
-
-# Fingerprint firmware
-etc/firmware/goodixfp.b00
-etc/firmware/goodixfp.b01
-etc/firmware/goodixfp.b02
-etc/firmware/goodixfp.b03
-etc/firmware/goodixfp.mdt
+# Radio - IMS
+bin/ims_rtp_daemon
+bin/imscmservice
+bin/imsdatadaemon
+bin/imsqmidaemon
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+-priv-app/ims/ims.apk
+-vendor/app/imssettings/imssettings.apk
+vendor/lib64/lib-dplmedia.so
+vendor/lib64/lib-ims-rcscmjni.so
+vendor/lib64/lib-imscamera.so
+vendor/lib64/lib-imsdpl.so
+vendor/lib64/lib-imsqimf.so
+vendor/lib64/lib-imsrcs.so
+vendor/lib64/lib-imsrcscm.so
+vendor/lib64/lib-imsrcscmclient.so
+vendor/lib64/lib-imsrcscmservice.so
+vendor/lib64/lib-imss.so
+vendor/lib64/lib-imsSDP.so
+vendor/lib64/lib-imsvt.so
+vendor/lib64/lib-imsxml.so
+vendor/lib64/lib-rcsimssjni.so
+vendor/lib64/lib-rcsjni.so
+vendor/lib64/lib-rtpcommon.so
+vendor/lib64/lib-rtpcore.so
+vendor/lib64/lib-rtpdaemoninterface.so
+vendor/lib64/lib-rtpsl.so
+vendor/lib64/librcc.so
+vendor/lib64/libvoice-svc.so

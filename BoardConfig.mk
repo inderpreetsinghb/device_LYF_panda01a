@@ -30,18 +30,18 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4831838208
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 25228189184 # 26838801408 - 16384
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_panda01a_defconfig
+TARGET_KERNEL_CONFIG := panda01a_defconfig
 
 # Properties
-TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(DEVICE_PATH)/android_filesystem_config.h
+#TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(DEVICE_PATH)/android_filesystem_config.h
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Sepolicy
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 
 # inherit from the proprietary version
--include vendor/LYF/panda01a/BoardConfigVendor.mk
+#-include vendor/LYF/panda01a/BoardConfigVendor.mk

@@ -24,13 +24,13 @@ $(call inherit-product, vendor/one/config/common.mk)
 PRODUCT_DEVICE := panda01a
 PRODUCT_NAME := one_panda01a
 PRODUCT_BRAND := LYF
+PRODUCT_MODEL := Water F1s
 PRODUCT_MANUFACTURER := LYF
 
 PRODUCT_GMS_CLIENTID_BASE := android-ctk
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=panda01a \
-    PRODUCT_MODEL := Water F1s \
     PRIVATE_BUILD_DESC="panda01a_msm8952_64-user 6.0.1 MMB29M 496 release-keys"
 
 BUILD_FINGERPRINT := LYF/LS-5201/panda01a_msm8952_64:6.0.1/MMB29M/195:user/release-keys
